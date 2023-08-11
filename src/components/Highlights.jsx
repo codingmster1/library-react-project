@@ -21,7 +21,7 @@ const Highlights = () => {
                         </div>
                         <div className="highlight">
                             <div className="highlight__img">
-                                <FontAwesomeIcon icon="books-open"/>
+                                <FontAwesomeIcon icon="book-open"/>
                             </div>
                             <h3 className ="highlight__subtitle">HUGE Selection</h3>
                             <p className ="highlight__para">
