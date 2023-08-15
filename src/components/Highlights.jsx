@@ -15,6 +15,14 @@ const Highlights = () => {
                         title="Easy and Quick" 
                         para="Get access instantly!"
                         />
+                        <Highlight icon ={<FontAwesomeIcon icon="bolt"/>} 
+                        title="Easy and Quick" 
+                        para="Get access instantly!"
+                        />
+                        <Highlight icon ={<FontAwesomeIcon icon="bolt"/>} 
+                        title="Easy and Quick" 
+                        para="Get access instantly!"
+                        />
                 
                         <div className="highlight">
                             <div className="highlight__img">
