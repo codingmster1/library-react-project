@@ -3,7 +3,7 @@ export const books = [
   {
     id: 1,
     title: "Animal Farm",
-    url: "./assets/animal-farm.gif",
+    url: "https://cdnb.artstation.com/p/assets/images/images/015/140/301/original/sascha-sendlbeck-book-animation.gif?1547203918",
     originalPrice: 19.99,
     salePrice: 9.99,
     rating: 4.5,
