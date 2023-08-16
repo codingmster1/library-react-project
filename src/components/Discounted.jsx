@@ -7,11 +7,14 @@ const Discounted = () => {
         <section id="recent">
             <div className="container">
                 <div className="row">
-                    <div className="section__title">
+                    <h2 className="section__title">
                         Discounted <span className="orange">Books</span>
-                    </div>
+                    </h2>
                     <div className="books">
-                        {books.map((book) => ( 
+                        {books
+                        .filter(book => book.salePrice > 0)
+                        .slice(0, 8)
+                        .map((book) => ( 
                         <Book book={book} key={book.id}/>
                         ))}
 
