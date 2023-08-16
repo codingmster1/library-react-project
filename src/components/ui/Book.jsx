@@ -17,12 +17,10 @@ const Book = ({book}) => {
                 {book.title}
             </a>
         </div>
-        <div className="book__ratings">
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star-half-alt" />   
+        <div className="book__ratings"> {
+            new Array(5).fill(0).map((_, index) => <FontAwesomeIcon icon="star" key={index}/>)
+            
+        }  
         </div>
         <div className="book__price">
             {book.salePrice ? (
