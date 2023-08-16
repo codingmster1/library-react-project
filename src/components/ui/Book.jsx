@@ -1,10 +1,10 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from 'react';
 
-const Book = () => {
+const Book = ({book}) => {
     return (
         <div className="book">
-        <a href="">
+        <a href="/">
             <figure className="book__img--wrapper">
                 <img src="https://cdnb.artstation.com/p/assets/images/images/015/140/301/original/sascha-sendlbeck-book-animation.gif?1547203918" alt="" className="book__img"/>
             </figure>
@@ -22,8 +22,8 @@ const Book = () => {
             <FontAwesomeIcon icon="star-half-alt" />   
         </div>
         <div className="book__price">
-              <span className="book__price--normal">$15.00</span>
-          $10.00
+              <span className="book__price--normal">${book.originalPrice}</span>
+          ${book.salePrice}
         </div>
     </div>
 
