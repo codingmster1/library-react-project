@@ -6,12 +6,15 @@ const Book = ({book}) => {
         <div className="book">
         <a href="/">
             <figure className="book__img--wrapper">
-                <img src="https://cdnb.artstation.com/p/assets/images/images/015/140/301/original/sascha-sendlbeck-book-animation.gif?1547203918" alt="" className="book__img"/>
+                <img src={book.url}
+                alt="" 
+                className="book__img"
+                />
             </figure>
         </a>
         <div className="book__title">
             <a href="/" className="book__title--link">
-                Animal Farm
+                {book.title}
             </a>
         </div>
         <div className="book__ratings">

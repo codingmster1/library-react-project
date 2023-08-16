@@ -11,7 +11,7 @@ export const books = [
   {
     id: 2,
     title: "Fahrenheit 451",
-    url: "./assets/Fahrenheit451Cover.jpg",
+    url: "https://pepboatella.com/wp-content/uploads/2018/12/4.jpg",
     originalPrice: 8.99,
     salePrice: null,
     rating: 5,
@@ -19,7 +19,7 @@ export const books = [
   {
     id: 3,
     title: "Clockwork Orange",
-    url: "./assets/clock.jpg",
+    url: "https://thebobsphere.files.wordpress.com/2018/09/cover-clockwork.png",
     originalPrice: 14.99,
     salePrice: null,
     rating: 5,
@@ -35,7 +35,7 @@ export const books = [
   {
     id: 5,
     title: "The Black Farm",
-    url: "./assets/blackfarm.jpg",
+    url: "https://m.media-amazon.com/images/I/51D0fYTXxxL.jpg",
     originalPrice: 12.99,
     salePrice: null,
     rating: 5,
@@ -43,7 +43,7 @@ export const books = [
   {
     id: 6,
     title: "N0S4A2",
-    url: "./assets/nos4a2-joe-hill-book-cover.jpg",
+    url: "https://cdn11.bigcommerce.com/s-65f8qukrjx/images/stencil/800w/products/6175/17032/Hill_N0S4A2_cover__57881.1687451115.jpg?c=1",
     originalPrice: 19.99,
     salePrice: 12.5,
     rating: 5,
