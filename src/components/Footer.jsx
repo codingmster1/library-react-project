@@ -17,6 +17,9 @@ const Footer = () => {
                         <a href="/books" class="footer__link">Books</a>
                         <a href="/cart" class="footer__link">Cart</a>
                     </div>
+                    <div className="footer__copyright">
+                        Copyright &copy; 2023 Library
+                    </div>
                 </div>
             </div>
         </footer>
