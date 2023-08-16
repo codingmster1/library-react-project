@@ -15,33 +15,14 @@ const Highlights = () => {
                         title="Easy and Quick" 
                         para="Get access instantly!"
                         />
-                        <Highlight icon ={<FontAwesomeIcon icon="bolt"/>} 
-                        title="Easy and Quick" 
-                        para="Get access instantly!"
+                        <Highlight icon ={<FontAwesomeIcon icon="tags"/>} 
+                        title="Affordable" 
+                        para="Never pay too much."
                         />
-                        <Highlight icon ={<FontAwesomeIcon icon="bolt"/>} 
-                        title="Easy and Quick" 
-                        para="Get access instantly!"
+                        <Highlight icon ={<FontAwesomeIcon icon="book-open"/>} 
+                        title="HUGE Selection" 
+                        para="There's something for everybody in your favorite genre."
                         />
-                
-                        <div className="highlight">
-                            <div className="highlight__img">
-                                <FontAwesomeIcon icon="book-open"/>
-                            </div>
-                            <h3 className ="highlight__subtitle">HUGE Selection</h3>
-                            <p className ="highlight__para">
-                                There's something for everybody in your favorite genre.
-                            </p>
-                        </div>
-                        <div className="highlight">
-                            <div className="highlight__img">
-                                <FontAwesomeIcon icon="tags"/>
-                            </div>
-                            <h3 className ="highlight__subtitle">Affordable</h3>
-                            <p className ="highlight__para">
-                                Never pay too much.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
