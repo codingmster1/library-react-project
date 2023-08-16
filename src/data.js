@@ -27,7 +27,7 @@ export const books = [
   {
     id: 4,
     title: "Lord of the Flies",
-    url: "./assets/Lordfly.jpg",
+    url: "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/qrwgj8smgbxdsha09qzn.jpg",
     originalPrice: 13.99,
     salePrice: 7.99,
     rating: 4.5,
@@ -50,16 +50,16 @@ export const books = [
   },
   {
     id: 7,
-    title: "Tender is the Flesh",
-    url: "./assets/tender.jpg",
+    title: "Sundial",
+    url: "https://m.media-amazon.com/images/I/91ptoBVw+9L._AC_UF894,1000_QL80_.jpg",
     originalPrice: 15,
     salePrice: 10,
     rating: 4,
   },
   {
     id: 8,
-    title: "Nightmare Girl",
-    url: "./assets/nightmare-girl.jpg",
+    title: "Berserk",
+    url: "https://i.pinimg.com/originals/18/0d/7f/180d7fba69871610744ad107a63c62b9.jpg",
     originalPrice: 21.99,
     salePrice: 17.95,
     rating: 4.5,
@@ -67,7 +67,7 @@ export const books = [
   {
     id: 9,
     title: "Last House on Needless Street",
-    url: "./assets/needless.jpg",
+    url: "https://m.media-amazon.com/images/I/915ZEVEob-L._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 25,
     salePrice: 19.95,
     rating: 4.5,
@@ -75,7 +75,7 @@ export const books = [
   {
     id: 10,
     title: "Off The Deep End",
-    url: "./assets/deepend.jpg",
+    url: "https://m.media-amazon.com/images/I/91rpizVurPL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 14.99,
     salePrice: null,
     rating: 5,
@@ -83,7 +83,7 @@ export const books = [
   {
     id: 11,
     title: "The Only Good Indians",
-    url: "./assets/indians.jpg",
+    url: "https://m.media-amazon.com/images/I/41dsNanQm-L.jpg",
     originalPrice: 25,
     salePrice: 20,
     rating: 5,
@@ -91,7 +91,7 @@ export const books = [
   {
     id: 12,
     title: "No Longer Human",
-    url: "./assets/nohuman.jpg",
+    url: "https://m.media-amazon.com/images/I/41FdkIkhgLL.jpg",
     originalPrice: 17.99,
     salePrice: 12.95,
     rating: 4.5,
