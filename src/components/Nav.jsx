@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LibraryLogo from '../assets/Library.svg';
+import SpellBook from '../assets/spellbook.gif';
 
 const Nav = () => {
     function openMenu() {
@@ -17,6 +18,7 @@ const Nav = () => {
 <div className="nav__container">
     <a href="/">
         <img src={LibraryLogo} alt="" className="logo" />
+        <img src={SpellBook} alt="" className="logo_2" />
     </a>
     <ul className="nav__links">
         <li className ="nav__list">
