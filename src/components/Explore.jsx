@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Explore = () => {
     return (
@@ -8,9 +10,9 @@ const Explore = () => {
                     <h2>
                         Find more <span className="orange">Books</span>
                     </h2>
-                    <a href="/books">
+                    <Link to="/books">
                         <button className="btn">Explore</button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
