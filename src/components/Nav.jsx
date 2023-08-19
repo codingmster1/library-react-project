@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LibraryLogo from '../assets/Library.svg';
-import SpellBook from '../assets/spellbook.gif';
+
 import { Link } from 'react-router-dom';
 
 
@@ -21,7 +21,7 @@ const Nav = () => {
 <div className="nav__container">
     <Link to="/">
         <img src={LibraryLogo} alt="" className="logo" />
-        <img src={SpellBook} alt="" className="logo_2" />
+        
     </Link>
     <ul className="nav__links">
         <li className ="nav__list">

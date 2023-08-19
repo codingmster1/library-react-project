@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Highlight from "./ui/Highlight";
+import SpellBook from '../assets/spellbook.gif';
 
 const Highlights = () => {
     return (
@@ -9,7 +10,9 @@ const Highlights = () => {
                 <div className="row">
                     <h2 className="section__title">
                         Why choose <span className="orange">Library?</span>
+                        
                     </h2>
+                    <img src={SpellBook} alt="" className="logo_2" />
                     <div className="highlight__wrapper">
                         <Highlight icon ={<FontAwesomeIcon icon="bolt"/>} 
                         title="Easy and Quick" 
