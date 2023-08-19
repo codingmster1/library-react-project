@@ -1,8 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useParams } from 'react-router-dom';
+import Price from '../components/ui/Price';
+import Rating from '../components/ui/Rating';
 
 const BookInfo = ({books}) => {
+    const {id} = useParams();
+    const book = books.find(book => +book.id === +id);
     return (
         <div id="books__body">
             <main id="books__main">
@@ -18,13 +22,53 @@ const BookInfo = ({books}) => {
                         </div>
                         <div className="book__selected">
                             <figure className="book__selected--figure">
-                                <img src="https://cdnb.artstation.com/p/assets/images/images/015/140/301/original/sascha-sendlbeck-book-animation.gif?1547203918" alt="/" className ="book__selected--img">
-                                </img>
+                                <img src={book.url}
+                                alt=""
+                                className="book__selected--img"
+                                />
                             </figure>
                             <div className="book__selected--description">
                                 <div className="book__selected--title">Animal Farm</div>
-                                <FontAwesomeIcon icon="star"/>
+                                <Rating rating="4.5" />
+                                <div className="book__selected--price">
+                                    <Price originalPrice={50} salePrice={20} />
+                                </div>
+                                <div className="book__summary">
+                                    <div className="book__summary--title">
+                                        Summary
+                                    </div>
+                                    <p className="book__summary__para">
+                                        <em>"All animals are equal, but some are more equal than others". </em>
+                                     A group of anthropomorphic farm animals who rebel 
+                                    against their human farmer, hoping to create a society where the 
+                                    animals can be equal, free, and happy.
+                                    </p>
+                                    <p className="book__summary__para">
+                                    Unlike other books which may be banned for several reasons, there's 
+                                    really only one main reason that Animal Farm has ever been banned: 
+                                    the critique of Communism. 
+                                    It should be noted that George Orwell, the author, was not a communist, nor was "Animal Farm" 
+                                    communist propaganda. On the contrary, Orwell was a Democratic socialist, writing in 1946, 
+                                    "Every line of serious work that I have written since 1936 has been written, directly or 
+                                    indirectly, against totalitarianism and for democratic socialism, as I understand it"
+
+
+                                    </p>
+                                </div>
+                                <button className="btn">
+                                    Add To Cart
+                                </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="books__container">
+                    <div className="row">
+                        <div className="book__selected--top">
+                            <h2 className="book__selected--title--top">
+                                Recommended Books
+                            </h2>
                         </div>
                     </div>
                 </div>
