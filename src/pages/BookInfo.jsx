@@ -28,22 +28,24 @@ const BookInfo = ({books}) => {
                                 />
                             </figure>
                             <div className="book__selected--description">
-                                <div className="book__selected--title">Animal Farm</div>
-                                <Rating rating="4.5" />
+                                <div className="book__selected--title">
+                                    {book.title}
+                                </div>
+                                <Rating rating={book.rating}/>
                                 <div className="book__selected--price">
-                                    <Price originalPrice={50} salePrice={20} />
+                                    <Price originalPrice={book.originalPrice} salePrice={book.salePrice} />
                                 </div>
                                 <div className="book__summary">
-                                    <div className="book__summary--title">
+                                    <h3 className="book__summary--title">
                                         Summary
-                                    </div>
-                                    <p className="book__summary__para">
+                                    </h3>
+                                    <p className="book__summary--para">
                                         <em>"All animals are equal, but some are more equal than others". </em>
                                      A group of anthropomorphic farm animals who rebel 
                                     against their human farmer, hoping to create a society where the 
                                     animals can be equal, free, and happy.
                                     </p>
-                                    <p className="book__summary__para">
+                                    <p className="book__summary--para">
                                     Unlike other books which may be banned for several reasons, there's 
                                     really only one main reason that Animal Farm has ever been banned: 
                                     the critique of Communism. 
