@@ -7,6 +7,13 @@ export const books = [
     originalPrice: 19.99,
     salePrice: 9.99,
     rating: 4.5,
+    info: `A group of anthropomorphic farm animals who rebel against their human farmer, hoping to create a society where the animals 
+    can be equal, free, and happy. 
+    
+    Unlike other books which may be banned for several reasons, there's 
+    really only one main reason that Animal Farm has ever been banned:  the critique of Communism. It should be noted that George Orwell, the author, was not a communist, nor was "Animal Farm"  communist propaganda. On the contrary, Orwell was a Democratic socialist, writing in 1946, 
+   "Every line of serious work that I have written since 1936 has been written, directly or 
+    indirectly, against totalitarianism and for democratic socialism, as I understand it"`,
   },
   {
     id: 2,
@@ -15,6 +22,10 @@ export const books = [
     originalPrice: 8.99,
     salePrice: null,
     rating: 5,
+    info: `Fahrenheit 451 tells the story of Guy Montag and his transformation from a book-burning fireman to a book-reading rebel. Montag lives in an oppressive society that attempts to eliminate all sources of complexity, contradiction, 
+    and confusion to ensure uncomplicated happiness for all its citizens.
+    
+    Ironically, a book about the dangers of banning books, Fahrenheit 451, was banned because it was said to have graphic content, including violently overthrowing the government.`,
   },
   {
     id: 3,
@@ -23,6 +34,10 @@ export const books = [
     originalPrice: 14.99,
     salePrice: null,
     rating: 5,
+    info: `In an England of the future, Alex (Malcolm McDowell) and his "Droogs" spend their nights getting high at the Korova Milkbar before embarking on "a little of the old ultraviolence," while jauntily warbling "Singin' in the Rain." After he's jailed for bludgeoning the Cat Lady to death, Alex submits to behavior modification technique to earn his freedom; he's conditioned to abhor violence. Returned to 
+    the world defenseless, Alex becomes the victim of his prior victims.
+    
+    Part of what made "A Clockwork Orange" a source of such intense controversy was the sexual violence in it.`,
   },
   {
     id: 4,
@@ -31,6 +46,11 @@ export const books = [
     originalPrice: 13.99,
     salePrice: 7.99,
     rating: 4.5,
+    info: `The plot concerns a group of British boys who are stranded on an uninhabited island and their disastrous attempts to govern themselves. Themes include the tension between groupthink and individuality, between rational and emotional reactions, 
+    and between morality and immorality.
+    
+    Bullying is rampant throughout the book— in fact, it is one of the main plot lines. Lord of the Flies by William Golding was challenged in the Waterloo Iowa schools in 1992 because of profanity, lurid passages about sex, and statements defamatory to 
+    minorities, God, women, and the disabled.`,
   },
   {
     id: 5,
@@ -39,6 +59,12 @@ export const books = [
     originalPrice: 12.99,
     salePrice: null,
     rating: 5,
+    info: `Nick, who decided to commit suicide with his wife, wakes up in a place called “The Black Farm,” an afterlife where those who commit suicide are sent to live out their days or feed a monstrous 
+    beast known as The Pig.
+    
+    Trigger & Content Warnings:
+
+    Graphic rape. Suicide & suicidal ideation.`,
   },
   {
     id: 6,
@@ -47,6 +73,8 @@ export const books = [
     originalPrice: 19.99,
     salePrice: 12.5,
     rating: 5,
+    info: `"NOS4A2" is a different kind of vampire story. It follows Vic McQueen, a gifted young woman who discovers she has a supernatural ability to find lost things. This ability puts her on a 
+    collision course with the evil and immortal Charlie Manx.`,
   },
   {
     id: 7,
@@ -55,6 +83,7 @@ export const books = [
     originalPrice: 15,
     salePrice: 10,
     rating: 4,
+    info: `The mother and daughter embark on a dark, desert journey to the past in the hopes of redeeming their future`,
   },
   {
     id: 8,
@@ -63,6 +92,8 @@ export const books = [
     originalPrice: 21.99,
     salePrice: 17.95,
     rating: 4.5,
+    info: `. Guts is a lone warrior who was born from a hanged corpse and raised as a mercenary by his abusive adoptive 
+    father Gambino after the death of his adoptive mother, Shisu.`,
   },
   {
     id: 9,
@@ -71,6 +102,8 @@ export const books = [
     originalPrice: 25,
     salePrice: 19.95,
     rating: 4.5,
+    info: `The Last House on Needless Street follows the ill-fated lives of Ted Bannerman, a man with dissociative identity disorder, and Dee Walters, 
+    a woman driven to avenge her sister who disappeared 11 years ago.`
   },
   {
     id: 10,
@@ -79,6 +112,8 @@ export const books = [
     originalPrice: 14.99,
     salePrice: null,
     rating: 5,
+    info: `Therapist turned stay-at-home mom Jules Hart's idyllic suburban life shatters when she crashes her car into an icy lake. Her son and another teenage boy plunge into the water with her, 
+    but Jules can only manage to save one―the wrong one.`,
   },
   {
     id: 11,
@@ -87,6 +122,8 @@ export const books = [
     originalPrice: 25,
     salePrice: 20,
     rating: 5,
+    info: `Four American Indian men from the Blackfeet Nation, who were childhood friends, find themselves in a desperate struggle for their lives against an entity that wants to exact revenge upon them for what they did during an elk hunt ten years earlier. 
+    Not just them, either, but their families and friends.`,
   },
   {
     id: 12,
@@ -95,5 +132,6 @@ export const books = [
     originalPrice: 17.99,
     salePrice: 12.95,
     rating: 4.5,
+    info: `Oba Yozo's attempts to reconcile himself to the world around him begin in early childhood, continue through high school, where he becomes a 'clown" to mask his alienation, and eventually lead to a failed suicide attempt as an adult.`,
   },
 ];
