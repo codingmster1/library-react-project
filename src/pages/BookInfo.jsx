@@ -6,15 +6,22 @@ import Price from '../components/ui/Price';
 import Rating from '../components/ui/Rating';
 
 
-const BookInfo = ({books, addToCart}) => {
+const BookInfo = ({books, addToCart, cart}) => {
     const {id} = useParams();
-    const book = books.find(book => +book.id === +id);
-    const [added, setAdded] = useState(false)
+    const book = books.find((book) => +book.id === +id);
+    
 
     function addBookToCart(book) {
-        setAdded(true);
+       
         addToCart(book)
     }
+
+    function bookExistsOnCart()
+    {
+        return cart.find(book => 
+            book.id === +id);
+        };
+    
     return (
         <div id="books__body">
             <main id="books__main">
@@ -53,8 +60,10 @@ const BookInfo = ({books, addToCart}) => {
                                         {book.info}
                                     </p>
                                 </div>
-                                { added ? (
+                                { bookExistsOnCart() ? (
+                                    <Link to={`/cart`} className="book__link">
                                     <button className="btn">Checkout</button> 
+                                    </Link>
                                     ) : (  
                                     <button className="btn" onClick={() => addBookToCart(book)}>
                                     Add To Cart
