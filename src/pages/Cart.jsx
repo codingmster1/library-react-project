@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, changeQuantity }) => {
     return (
 <div id="books__body">
     <main id="books__main">
@@ -17,29 +17,38 @@ const Cart = ({ cart }) => {
                         <span className="cart__price">Price</span>
                     </div>
                     <div className="cart__body">
-                        <div className="cart__item">
-                            <div className="cart__book">
-                                <img src="https://cdnb.artstation.com/p/assets/images/images/015/140/301/original/sascha-sendlbeck-book-animation.gif?1547203918" className="cart__book--img" alt="" />
-                                <div className="cart__book--info">
-                                    <span className="cart__book--title">
-                                        Animal Farm
-
-                                    </span>
-                                    <span className="cart__book--price">
+                        {
+                            cart.map(book => {
+                                return (
+                                    <div className="cart__item">
+                                    <div className="cart__book">
+                                        <img src={book.url} className="cart__book--img" alt="" />
+                                        <div className="cart__book--info">
+                                            <span className="cart__book--title">
+                                                {book.title}
+        
+                                            </span>
+                                            <span className="cart__book--price">
+                                                {(book.salePrice || book.originalPrice).toFixed(2)}
+                                            </span>
+                                            <button className="cart__book--remove">
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="cart__quantity">
+                                        <input type="number" min={0} max={99} className="cart__input"
+                                        onChange={(event) => changeQuantity(event.target.value)}/>
+                                    </div>
+                                    <div className="cart__total">
                                         $10.00
-                                    </span>
-                                    <button className="cart__book--remove">
-                                        Remove
-                                    </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="cart__quantity">
-                                <input type="number" min={0} max={99} className="cart__input"/>
-                            </div>
-                            <div className="cart__total">
-                                $10.00
-                            </div>
-                        </div>
+
+                                )
+                            })
+                        }
+                       
                     </div>
                 </div>
                 <div className="total">
