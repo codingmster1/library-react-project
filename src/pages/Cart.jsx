@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import EmptyCart from "../assets/emptycartmask.gif";
 
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
@@ -61,9 +63,14 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                 </div>
 
                                 )
-                            })
-                        }
-                       
+                            })}
+                    </div>
+                    <div className="cart__empty">
+                        <img src={EmptyCart} alt="/" className="cart__empty--img" />
+                        <h2>Your Cart is Empty!</h2>
+                        <Link to="/books">
+                        <button className="btn">Browse Books</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="total">
