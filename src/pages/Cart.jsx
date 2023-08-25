@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Cart = ({ cart, changeQuantity }) => {
+const Cart = ({ cart, changeQuantity, removeItem }) => {
     const total = () => {
         let price = 0;
         cart.forEach((item) => {
             price += +(
                 (item.salePrice || item.originalPrice) * item.quantity
-                ).toFixed(2);
+                );
         });
         return price;
 
@@ -43,7 +43,7 @@ const Cart = ({ cart, changeQuantity }) => {
                                             <span className="cart__book--price">
                                                 {(book.salePrice || book.originalPrice).toFixed(2)}
                                             </span>
-                                            <button className="cart__book--remove">
+                                            <button className="cart__book--remove"onClick={() => removeItem(book)}>
                                                 Remove
                                             </button>
                                         </div>
@@ -69,15 +69,15 @@ const Cart = ({ cart, changeQuantity }) => {
                 <div className="total">
                     <div className="total__item total__sub-total">
                         <span>Subtotal</span>
-                        <span>9.00</span>
+                        <span>${(total() * 0.9).toFixed(2)}</span>
                     </div>
                     <div className="total__item total__tax">
                         <span>Tax</span>
-                        <span>1.00</span>
+                        <span>${(total() * 0.1).toFixed(2)}</span>
                     </div>
                     <div className="total__item total__price">
                         <span>Total</span>
-                        <span>${total()}</span>
+                        <span>${total().toFixed(2)}</span>
                     </div>
                     <button className="btn btn__checkout no-cursor"
                     onClick={() => alert(`You've met with a terrible fate, haven't you? `)}>
