@@ -65,15 +65,20 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                 )
                             })}
                     </div>
-                    <div className="cart__empty">
+                    {
+                        cart.length === 0 && (
+                            <div className="cart__empty">
                         <img src={EmptyCart} alt="/" className="cart__empty--img" />
                         <h2>Your Cart is Empty!</h2>
                         <Link to="/books">
                         <button className="btn">Browse Books</button>
                         </Link>
                     </div>
+                        )}
+                    
+                    
                 </div>
-                <div className="total">
+                {cart.length > 0 && (<div className="total">
                     <div className="total__item total__sub-total">
                         <span>Subtotal</span>
                         <span>${(total() * 0.9).toFixed(2)}</span>
@@ -91,7 +96,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                         Proceed to checkout
 
                     </button>
-                </div>
+                </div>)}
             </div>
         </div>
     </main>
