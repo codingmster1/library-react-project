@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 const Cart = ({ cart, changeQuantity }) => {
+    const total = () => {
+        let price = 0;
+        cart.forEach((item) => {
+            price += +(
+                (item.salePrice || item.originalPrice) * item.quantity
+                ).toFixed(2);
+        });
+        return price;
+
+    };
+   
+   
     return (
 <div id="books__body">
     <main id="books__main">
@@ -65,7 +77,7 @@ const Cart = ({ cart, changeQuantity }) => {
                     </div>
                     <div className="total__item total__price">
                         <span>Total</span>
-                        <span>10.00</span>
+                        <span>${total()}</span>
                     </div>
                     <button className="btn btn__checkout no-cursor"
                     onClick={() => alert(`You've met with a terrible fate, haven't you? `)}>
