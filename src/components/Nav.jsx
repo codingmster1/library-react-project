@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Nav = () => {
+const Nav = ({numberOfItems}) => {
     function openMenu() {
         document.body.classList += "menu--open";
     }
@@ -45,7 +45,7 @@ const Nav = () => {
             <Link to="/cart" className="nav__link">
                 <FontAwesomeIcon icon="shopping-cart"/>
             </Link>
-            <span className="cart__length">2</span>
+            <span className="cart__length">{numberOfItems}</span>
         </li>
     </ul>
     <div className ="menu__backdrop">
