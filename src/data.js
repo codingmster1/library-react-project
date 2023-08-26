@@ -83,7 +83,13 @@ export const books = [
     originalPrice: 15,
     salePrice: 10,
     rating: 4,
-    info: `The mother and daughter embark on a dark, desert journey to the past in the hopes of redeeming their future`,
+    info: `Sundial is a new, twisty psychological horror novel from Catriona Ward, internationally bestselling author of The Last House on Needless Street.
+         You can't escape what's in your blood...
+         All Rob wanted was a normal life. She almost got it, too: a husband, two kids, a nice house in the suburbs. But Rob fears for her oldest daughter, Callie, 
+         who collects tiny bones and whispers to imaginary friends. Rob sees a darkness in Callie, one that reminds her too much of the family she left behind. She decides to take 
+         Callie back to her childhood home, to Sundial, deep in the Mojave Desert. And there she will have to make a terrible choice.
+        Callie is worried about her mother. Rob has begun to look at her strangely, and speaks of past secrets. And Callie fears that only one of them will leave Sundial alive…
+       The mother and daughter embark on a dark, desert journey to the past in the hopes of redeeming their future.`,
   },
   {
     id: 8,
@@ -92,8 +98,12 @@ export const books = [
     originalPrice: 21.99,
     salePrice: 17.95,
     rating: 4.5,
-    info: `. Guts is a lone warrior who was born from a hanged corpse and raised as a mercenary by his abusive adoptive 
-    father Gambino after the death of his adoptive mother, Shisu.`,
+    info: `. Guts is a lone warrior who was born from a corpse and raised as a mercenary by his abusive adoptive 
+    father Gambino after the death of his adoptive mother. Later on in his life, he joins the Band of the Hawk after 
+    being defeated in a duel by Griffith, the group's leader and founder. 
+    Together, they dominate every battle, but something menacing lurks in the shadows.
+    Berserk became (in)famous for having some of the most violent and disturbing scenes in all fiction. It got to the 
+    point where some fans wondered what was going on in Miura's, the author, mind.`,
   },
   {
     id: 9,
@@ -103,7 +113,11 @@ export const books = [
     salePrice: 19.95,
     rating: 4.5,
     info: `The Last House on Needless Street follows the ill-fated lives of Ted Bannerman, a man with dissociative identity disorder, and Dee Walters, 
-    a woman driven to avenge her sister who disappeared 11 years ago.`
+    a woman driven to avenge her sister who disappeared 11 years ago.
+    This is the story of a serial killer. A stolen child. Revenge. Death. And an ordinary house at the end of an ordinary street.
+   All these things are true. And yet they are all lies...
+   You think you know what's inside the last house on Needless Street. You think you've read this story before. That's where you're wrong.
+   In the dark forest at the end of Needless Street, lies something buried. But it's not what you think...`
   },
   {
     id: 10,
