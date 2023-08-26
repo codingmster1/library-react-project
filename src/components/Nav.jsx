@@ -57,7 +57,7 @@ const Nav = ({numberOfItems}) => {
         </button>
         <ul className="menu__links">
             <li className="menu__list">
-                <Link to="/home" className="menu__link">
+                <Link to="/" className="menu__link">
                     Home
                 </Link>
             </li>
